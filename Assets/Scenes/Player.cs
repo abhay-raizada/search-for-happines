@@ -10,6 +10,7 @@ public class Player : MonoBehaviour
      void Update()
      {
         var move = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
+        Debug.Log("transform position x = " + transform.position.x + "TransformPsoition y =" + transform.position.y );
         if((move.x !=0 || move.y != 0) && speed < 25.0f) {
             speed += 1.0f;
         }
